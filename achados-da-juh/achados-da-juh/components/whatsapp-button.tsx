@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils"
 
-const WHATSAPP_URL = "https://chat.whatsapp.com/HP1RTgiGakpKw4Zyqnnni1"
+const WHATSAPP_URL = "teste"
 
 declare global {
   interface Window {
