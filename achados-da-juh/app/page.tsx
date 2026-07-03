@@ -11,6 +11,7 @@ export default function Page() {
           width={951}
           height={1640}
           priority
+          sizes="(min-width: 448px) 448px, 100vw"
           className="h-auto w-full"
         />
         <div className="absolute inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-black/40 to-transparent p-5 pt-16">

@@ -1,0 +1,14 @@
+# dependencies
+/node_modules
+
+# next.js build output
+/.next/
+
+# vercel local link config
+.vercel
+
+# env (nenhum existe hoje, mas se um dia precisar de uma API key, não vaza)
+.env*
+
+# typescript
+next-env.d.ts
