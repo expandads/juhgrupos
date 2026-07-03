@@ -6,7 +6,7 @@ export default function Page() {
     <main className="flex min-h-dvh items-center justify-center bg-background p-4">
       <div className="relative w-full max-w-md overflow-hidden rounded-2xl shadow-xl">
         <Image
-          src="/banner-achados.png"
+          src="/banner-achados.webp"
           alt="Achados da Juh - Beleza, moda e autocuidado com desconto"
           width={951}
           height={1640}

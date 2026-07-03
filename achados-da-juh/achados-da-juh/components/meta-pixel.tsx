@@ -15,7 +15,8 @@ export function MetaPixel() {
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '${META_PIXEL_ID}');
-        fbq('track', 'PageView');`}
+        var pvEventId = (window.crypto && window.crypto.randomUUID) ? window.crypto.randomUUID() : (Date.now() + '_' + Math.random().toString(36).slice(2));
+        fbq('track', 'PageView', {}, {eventID: pvEventId});`}
       </Script>
       <noscript>
         {/* eslint-disable-next-line @next/next/no-img-element */}

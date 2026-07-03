@@ -12,7 +12,16 @@ declare global {
 
 function trackLead() {
   if (typeof window !== "undefined" && typeof window.fbq === "function") {
-    window.fbq("track", "Lead", { content_name: "Grupo VIP WhatsApp" })
+    const eventId =
+      window.crypto && "randomUUID" in window.crypto
+        ? window.crypto.randomUUID()
+        : `lead_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`
+    window.fbq(
+      "track",
+      "Lead",
+      { content_name: "Grupo VIP WhatsApp", value: 1, currency: "BRL" },
+      { eventID: eventId },
+    )
   }
 }
 
