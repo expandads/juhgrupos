@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${geistSans.variable} bg-background`}
+      className={`${geistSans.variable} light bg-background`}
     >
       <body className="font-sans antialiased">
         <MetaPixel />
