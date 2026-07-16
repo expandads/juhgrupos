@@ -1,7 +1,6 @@
 import Script from "next/script"
 
 export const META_PIXEL_ID = "1601864461281816"
-export const META_PIXEL_ID_2 = "922544080840438"
 
 export function MetaPixel() {
   return (
@@ -16,7 +15,6 @@ export function MetaPixel() {
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '${META_PIXEL_ID}');
-        fbq('init', '${META_PIXEL_ID_2}');
         var pvEventId = (window.crypto && window.crypto.randomUUID) ? window.crypto.randomUUID() : (Date.now() + '_' + Math.random().toString(36).slice(2));
         fbq('track', 'PageView', {}, {eventID: pvEventId});`}
       </Script>
@@ -27,16 +25,6 @@ export function MetaPixel() {
           width="1"
           style={{ display: "none" }}
           src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
-          alt=""
-        />
-      </noscript>
-      <noscript>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          height="1"
-          width="1"
-          style={{ display: "none" }}
-          src={`https://www.facebook.com/tr?id=${META_PIXEL_ID_2}&ev=PageView&noscript=1`}
           alt=""
         />
       </noscript>
